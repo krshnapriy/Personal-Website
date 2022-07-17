@@ -1,0 +1,33 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url('homebg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.headerset{
+	padding-top: 200px;
+	box-sizing: border-box;
+	display: flex;
+	
+}
+
+.headerset h2{
+	font-size: 30px;
+	
+}
+
+.headerset h1{
+	font-size: 62px;
+	font-weight: bold;
+}
+
+
+.mypic{
+	width: 450px;
+	clip-path: circle();
+	justify-content: center;
+	align-items: center;
+	margin-right: 10%
+}

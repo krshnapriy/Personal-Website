@@ -1,0 +1,95 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url('greenbg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+nav{
+	display:flex;
+	align-items: center;
+	height:50px;
+	background-color:#D6BC79;
+}
+	
+nav ul{
+	display:flex;
+	list-style:none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	margin:20px;
+	font-family: 'Courier New', monospace;
+	color:#0B0800;
+	font-size:20px;
+	font-weight:700;
+	}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}	
+	
+	
+.boxfirst{
+	width: 500px;
+	height: 570px;
+	background: rgba(0,0,0,0.6);
+	padding: 40px;
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	color: white;
+	font-family: 'Century Gothic',sans-serif;
+}
+
+.boxother{
+	width: 770px;
+	height: 350px;
+	background: rgba(0,0,0,0.6);
+	padding: 40px;
+	text-align: center;
+	margin: auto;
+	margin-top: 15%;
+	color: white;
+	font-family: 'Century Gothic',sans-serif;
+}
+
+
+.box h1{
+	font-size: 35px;
+	letter-spacing: 3px;
+	font-weight: 100;
+}
+
+
+
+.box li{
+	display: inline-block;
+	margin: 6px;
+
+}
+.box li a{
+	color:white;
+	font-size:60px;
+}	
+
+a{
+	text-align: center;
+	margin: 20px;
+	margin-top: 5%;
+	color: white;
+	font-family: 'Century Gothic',sans-serif;
+	font-weight:540;
+	font-size:18px
+}	
+
+.media li{
+    text-align: center;
+	list-style: none;
+	font-size:25px;
+	color:#FFFFFF;
+	text-align: center;
+	}
+

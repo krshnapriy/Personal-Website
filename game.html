@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Math Quiz Game</title>
+	<link rel="stylesheet" type="text/css" href="gamestyle.css">
+</head>
+<body>
+	<nav>
+		<ul>
+		   <li><a href="HOME.html"> HOME </a></li>
+		   <li><a href="about.html"> ABOUT </a></li>
+		   <li><a href="game.html" target="main_page">GAME</a></li>
+		   <li><a href="feedback.html" target="main_page">FEEDBACK</a></li>
+		  
+		</ul>
+	</nav>
+	
+	
+<section>
+	<h1>Math Addition Quiz Game</h1>
+	<div class="centerdiv">
+		<div class="insertBox">
+			<div class="box1">
+				<input type="text" id="v1">
+			</div>
+			<div class="box1">
+				<p>+</p>
+			</div>
+			<div class="box1">
+				<input type="text" id="v2">
+			</div>
+		</div>
+		
+		<div class ="middleBox">
+			<input type="text" id="answ">
+		</div>
+		
+		<div class ="sentBox">
+			<button onclick="jsGame()">CHECK ANSWER</button>
+		</div>
+		</div>
+	</div>
+</section>
+
+<script>
+
+let n1 = Math.floor(Math.random()*100+1);
+let n2 = Math.floor(Math.random()*100+1);
+document.getElementById('v1').value = n1;
+document.getElementById('v2').value = n2;
+
+let ans= n1 + n2
+
+const jsGame = () => {
+	var a = document.getElementById('answ').value;
+	if(a == ans){
+		alert("Well done! Your answer is correct.");
+	}else{
+		alert("Oops!! Correct answer is "+ ans +".Try Again.");
+	}
+	document.getElementById('answ').value="";
+	n1 = Math.floor(Math.random()*100+1);
+	n2 = Math.floor(Math.random()*100+1);
+	document.getElementById('v1').value = n1;
+	document.getElementById('v2').value = n2;
+
+	ans= n1 + n2
+}
+
+</script>
+</body>
+</html>

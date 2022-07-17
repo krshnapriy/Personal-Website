@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel = "stylesheet" type="text/css" href="homestyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">		
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>		
+<style>
+#clock{
+	color:white;
+	top: 10%;
+	left: 3%;
+	background: rgba(0,0,0,0.6);
+	font-family: 'Century Gothic',sans-serif;
+	font-size: 30px;
+	position: absolute;
+	padding: 20px 40px;
+	border-radius: 15px;
+}
+
+
+</style>
+
+<body onload="realtimeClock()">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container">
+				<a href="" class="navbar-brand text-warning font-weight-bold">
+				HOME</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" 
+				data-target="#collapsenavbar">
+					<span class="navbar-toggler-icon"> </span>
+				</button>
+				
+				<div class="collapse navbar-collapse text-center" id="collapsenavbar">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="about.html" class="nav-link text-warning">ABOUT</a>
+						</li>
+						<li class="nav-item">
+							<a href="game.html" class="nav-link text-warning">GAME</a>
+						</li>
+						<li class="nav-item">
+							<a href="feedback.html" class="nav-link text-warning">FEEDBACK</a>
+						</li>									
+					</ul>				
+				
+				</div>
+				
+			</div>		
+		
+	</nav>
+
+<div class="main-container">
+	<div id="clock"></div>
+</div>
+<script>
+function realtimeClock() {
+	var rtClock = new Date();
+	var hours = rtClock.getHours();
+	var minutes = rtClock.getMinutes();
+	var seconds = rtClock.getSeconds();
+	
+	var ampm= ( hours <12) ? "AM" :"PM";
+	hours = (hours > 12) ? hours - 12 : hours;
+	hours = ("0" + hours).slice(-2);
+	minutes = ("0" + minutes).slice(-2);	
+	seconds = ("0" + seconds).slice(-2);
+	
+	document.getElementById('clock').innerHTML = 
+		hours+ " : " +minutes+ " : " +seconds+ " " +ampm;
+	var t = setTimeout(realtimeClock,500);
+	
+}
+</script>
+	
+<div class="container text-right text-white headerset">
+	<div class="imgbox">
+		<img src="me.jpg" class="mypic" alt="mypic">
+	</div>
+	<div class="content">
+		<h2>Hey guys, Welcome to my webpage!</h2>
+		<h1>I'M KRISHNAPRIYA</h1>
+		<br>
+		<a href="about.html"><button class="btn btn-warning text-white btn-lg">MORE ABOUT ME</button></a>
+	</div>
+</div>
+</body>
+</html>

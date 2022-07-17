@@ -1,0 +1,95 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url('gamebg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+nav{
+	display:flex;
+	align-items: center;
+	height:50px;
+	background-color:#4D4D4D;
+}
+	
+nav ul{
+	display:flex;
+	list-style:none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	margin:20px;
+	font-family: "Trebuchet MS", sans-serif;
+	color:#FFFFFF;
+	font-size:20px;
+	font-weight:700;
+	}
+	
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+section{
+height: 80vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+section h1{ 
+padding-bottom: 20px;
+font-size:2rem;
+color: #BFBFBF;
+font-family: 'Century Gothic',sans-serif;
+text-shadow: 1px 1px 2px white;
+}
+
+.centerdiv{
+	width: 500px;
+	height: 300px;
+	background: #34B2B4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: 'Century Gothic',sans-serif;
+}
+
+.insertBox{
+display: flex;
+justify-content: center;
+align-items: center;
+height:100px;
+}
+
+#v1,#v2{
+text-align: center;
+padding: 20px 30px;
+width:35px;
+font-size:30px;
+}
+
+.box1 p{
+font-size: 50px;
+margin: 0 10px 0 10px;
+}
+
+.middleBox #answ{
+margin: 30px 0:
+padding:5px 0;
+font-size: 30px;
+text-align: center;
+width:180px;
+}
+
+.sentBox button{
+padding:10px 20px;
+margin: 10px 0 10px 0;
+color: white;
+background-color: #4D4D4D;
+}
